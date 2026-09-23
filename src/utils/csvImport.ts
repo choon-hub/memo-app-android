@@ -7,8 +7,7 @@ export type CsvImportError = {
 }
 
 export type CsvImportResult<T> =
-  | { success: true; rows: T[] }
-  | { success: false; errors: CsvImportError[] }
+  { success: true; rows: T[] } | { success: false; errors: CsvImportError[] }
 
 export type DailyNewCsvInput = {
   title: string
